@@ -13,7 +13,7 @@ function Stripes() {
     ]
 
   return (
-    <div className='flex gap-10 border-t-[1px] border-b-[1px] border-zinc-600 mt-32'>
+    <div className='flex gap-10 border-t-[1px] border-b-[1px] border-zinc-600 mt-32 whitespace-nowrap overflow-hidden'>
         {stripeData.map((ele,index)=>(<Stripe key={index} data = {ele} />))}
     </div>
   )

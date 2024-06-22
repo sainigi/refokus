@@ -1,18 +1,23 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
 
-function Product() {
+function Product({val}) {
   return (
-    <div className='max-w-screen-xl m-auto'>
-        <div className='py-20 flex items-center justify-between'>
-            <h1>arquitel</h1>
-            <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint praesentium porro error itaque, animi possimus vero fugit voluptates mollitia.</p>
-            <Button />
-            </div>
+    <div className="w-full py-20">
+      <div className="max-w-screen-xl m-auto flex items-center justify-between">
+        <h1 className="text-6xl font-medium capitalize">{val.title}</h1>
+        <div className="w-1/3 dets">
+          <p className="mb-10">
+            {val.description}
+          </p>
+          <div className="flex gap-5">
+          {(val.live) && <Button />}
+          {(val.case) && <Button title="Case Study"/>}
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Product
+export default Product;
