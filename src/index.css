@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Santoshi';
+    src: url(../../../Clone/SANT.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
